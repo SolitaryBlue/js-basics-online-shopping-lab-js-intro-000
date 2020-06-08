@@ -45,7 +45,7 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   for (let i = 0; i < cart.length; i++) {
-    if(item == object.keys(cart[i])) {
+    if(item == object.keys(cart)) {
       cart.splice(0, cart.itemName)
       return cart;
     } else {
