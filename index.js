@@ -45,13 +45,10 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   for (let i = 0; i < cart.length; i++) {
-    if(item == Object.keys(cart[i])) {
-      cart.splice(0, cart[i])
-      return cart;
-    } else {
-      return "That item is not in your cart."
-    }
-
+    let removeMe = Object.keys(cart);
+    if(item == removeMe) {
+      console.log(removeMe)
+    } 
   }
 }
 
