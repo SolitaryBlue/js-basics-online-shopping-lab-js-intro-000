@@ -48,7 +48,7 @@ function removeFromCart(item) {
     let removeMe = Object.keys(cart);
     if(item == removeMe) {
       cart.splice(0, cart[i]);
-      return cart; 
+      return cart;
     }
   }
 }
