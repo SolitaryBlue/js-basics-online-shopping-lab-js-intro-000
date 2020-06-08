@@ -47,8 +47,11 @@ function removeFromCart(item) {
   for (let i = 0; i < cart.length; i++) {
     if(item == object.keys(cart[i])) {
       cart.splice(0, cart.itemName)
+      return cart;
+    } else {
+      return `That item is not in your cart.`
     }
-    return cart;
+    
   }
 }
 
