@@ -48,7 +48,7 @@ function removeFromCart(item) {
     let removeMe = Object.keys(cart);
     if(item == removeMe) {
       console.log(removeMe)
-    } 
+    }
   }
 }
 
