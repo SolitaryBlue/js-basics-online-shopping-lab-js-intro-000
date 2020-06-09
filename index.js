@@ -55,7 +55,7 @@ function removeFromCart(item) {
         console.log("splicing");
         cart.splice(i, 1);
       }
-    }  
+    }
   }
     if (found === false) {
       return cart;
