@@ -47,7 +47,7 @@ function removeFromCart(item) {
   for (let i = 0; i < cart.length; i++) {
     let removeMe = Object.keys(cart);
     if(item == removeMe) {
-      cart.splice(0, cart[i]);
+      cart.splice(cart.indexOf(item)); 
       return cart;
     }
   }
