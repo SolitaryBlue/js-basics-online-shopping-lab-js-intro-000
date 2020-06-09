@@ -44,13 +44,25 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  for (let i = 0; i < cart.length; i++) {
-    let removeMe = Object.keys(cart);
-    if(item == removeMe) {
-      cart.splice(cart.indexOf(item));
-      return cart;
-    }
+  var found = false;
+  if(cart.length === 0) {
+    return "That item is not in your cart.";
+  } else {
+    for ( var i=0; i < cart.length; i++) {
+      console.log( "item:"+item+"carti:"+cart[i].itemName);
+      if (cart[i].itemName === item) {
+        found = true;
+        console.log("splicing");
+        cart.splice(i, 1);
+      }
+    }  
   }
+    if (found === false) {
+      return cart;
+    } else {
+      return "That item is not in your cart.";
+    }
+
 }
 
 function placeOrder(cardNumber) {
